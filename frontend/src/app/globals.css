@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #030712;
+  --color-brand-card: rgba(255, 255, 255, 0.03);
+  --color-brand-primary: #38bdf8;
+  --color-brand-secondary: #34d399; 
+  --color-brand-warning: #fbbf24; 
+  --color-brand-danger: #f87171; 
+  --color-brand-text: #f8fafc; 
+  --color-brand-subtext: #94a3b8; 
+
+  --font-display: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Custom Glassmorphism Classes - adapted for deep space dark theme */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.glass-panel-glow-primary {
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.05), inset 0 0 10px rgba(0, 102, 255, 0.02);
+}
+
+.glass-panel-glow-secondary {
+  box-shadow: 0 0 30px rgba(0, 208, 132, 0.05), inset 0 0 10px rgba(0, 208, 132, 0.02);
+}
+
+/* Custom Animations */
+@keyframes highway-scroll {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -120px;
+  }
+}
+
+.animated-road {
+  background-image: linear-gradient(to right, rgba(0, 102, 255, 0.15) 50%, transparent 50%);
+  background-size: 80px 3px;
+  background-repeat: repeat-x;
+  animation: highway-scroll 1.5s linear infinite;
+}
+
+/* Keyframe animations for fading elements in client */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom Scrollbars */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(248, 249, 252, 0.5);
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(0, 102, 255, 0.2);
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 102, 255, 0.4);
+}
+
+html, body {
+  background-color: transparent !important;
+}
