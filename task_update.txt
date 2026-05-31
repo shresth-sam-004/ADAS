@@ -1,0 +1,6 @@
+- `[x]` **Phase 13: Implement Attack Consequences UI and Car Movement**
+  - `[x]` Add `speed` prop to `ThreeVehicle.tsx`
+  - `[x]` Add dark road plane and animate grid lines backward to simulate driving forward
+  - `[x]` Remove passive slow car rotation that caused the backward-facing issue
+  - `[x]` Implement `attackConsequences` dictionary and dynamic UI panel below the attack cards
+  - `[x]` Apply visual shaking/drifting effects to the 3D car body depending on the active attack

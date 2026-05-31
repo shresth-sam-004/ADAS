@@ -1,0 +1,5 @@
+- `[x]` **Phase 14: Cinematic Cyberattack Simulator**
+  - `[x]` Map `attackMode` constants (`camera_spoofing`, `gps_spoofing`, etc.) correctly to Three.js elements.
+  - `[x]` Create unique 3D visual effects for each attack (Red Camera Cone, Radar Rings, Fake Obstacle Wireframe Box, V2V Packets).
+  - `[x]` Implement dynamic cinematic camera panning that automatically zooms in on the compromised sensor when an attack is injected.
+  - `[x]` Ensure the camera pulls back to a wide shot during the "Safe Response" recovery phase (Stage 5+).

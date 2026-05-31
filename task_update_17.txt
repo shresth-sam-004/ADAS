@@ -1,0 +1,9 @@
+- `[x]` **Phase 17: Build Physical Prototype & ECE Integration Section**
+  - `[ ]` Create `ECEIntegration.tsx` component.
+  - `[ ]` Implement floating "Hardware Digital Twin" with hover popups for ESP32, Ultrasonic, GPS, etc.
+  - `[ ]` Implement "Live Sensor Stream" HUD with animated data values.
+  - `[ ]` Build "Simulate Sensor Attack" logic to override values and trigger visual red alerts.
+  - `[ ]` Build Data Flow Visualization flowchart.
+  - `[ ]` Build ECE vs CSE Interdisciplinary Bridge.
+  - `[ ]` Import and inject `ECEIntegration` into `page.tsx` below Section 2.
+  - `[ ]` Renumber subsequent sections in `page.tsx` to 04 and 05.

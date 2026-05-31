@@ -1,0 +1,2 @@
+- `[x]` **Phase 15: Enhance Engineering Detail of Consequences**
+  - `[x]` Update the `attackConsequences` dictionary with highly technical, detailed descriptions of the physical and algorithmic impacts of each attack (e.g. SLAM failure, DSRC/C-V2X mesh spoofing, RF flooding, ACC disengagement).
